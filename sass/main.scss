@@ -1,0 +1,21 @@
+@import './utils/vars';
+@import './components/mixin';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+@import './components/container';
+
+@import './components/title';
+@import './components/pre-title';
+@import './components/btn';
+@import './components/backdrop';
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/prices';
+@import './layouts/benefits';
+@import './layouts/barbers';
+@import './layouts/gallery';
+@import './layouts/contact';

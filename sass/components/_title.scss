@@ -1,0 +1,5 @@
+.title {
+    font-family: 'Raleway', sans-serif;
+    @include font(700, 72px, 1.18, 0.05em);
+    color: var(--main-title-color);
+}

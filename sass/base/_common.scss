@@ -1,0 +1,18 @@
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    transition: color 300ms linear;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.section {
+    padding-bottom: 130px;
+    padding-top: 130px;
+}

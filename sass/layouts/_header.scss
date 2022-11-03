@@ -1,0 +1,55 @@
+.header {
+    position: absolute;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.logo {
+    margin-right: 130px;
+}
+
+.navigation__list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.navigation__item {
+    @include font(600, 12px, 1.33, 0.1em);
+    color: #FFFFFF;
+}
+
+.connect {
+    margin-left: auto;
+}
+
+.connect__tel {
+    @include font(600, 12px, 1.33, 0.1em);
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 43px;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color)
+    }
+}
+
+.connect__btn {
+    color: #FFFFFF;
+    margin-right: 17px;
+}
+
+.navigation__link {
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

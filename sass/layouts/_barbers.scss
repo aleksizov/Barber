@@ -1,0 +1,93 @@
+.barbers-pre-title {
+    margin-bottom: 20px;
+}
+
+.barbers-title {
+    font-size: 42px;
+    line-height: 1.16;
+    color: var(--main-text-color);
+    margin-bottom: 44px;
+}
+
+.barbers-list {
+    display: flex;
+    gap: 30px;
+}
+
+.barbers-item {
+    width: calc((100% - 60px) / 3);
+}
+
+.barbers-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.barbers-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include font(400, 18px, 1.38, 0.02em);
+    text-align: center;
+    background-color: rgba(247, 247, 247, 0.588);
+    padding: 40px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+
+    .barbers-item:hover & {
+        transform: translateY(0%);
+    }
+}
+
+.barbers-item-title {
+    @include font(400, 18px, 1.38, 0.02px);
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 8px;
+}
+
+.barbers-item-text {
+    @include font(400, 14px, 1.35, 0.02em);
+    text-align: center;
+    color: #FF6C00;
+    margin-bottom: 30px;
+}
+
+.barbers-wrap {
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.barbers-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barbers-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border-color: #9DA4BD;
+    display: flex;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    transition: color 300ms linear;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.barbers-soc-link:hover .barbers-soc-icon,
+.barbers-soc-link:focus .barbers-soc-icon {
+    fill: var(--accent-color);
+}
+
+.barbers-soc-icon {
+    transition: fill 300ms linear;
+}
